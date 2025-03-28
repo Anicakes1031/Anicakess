@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+/*PARA SA FONT PO ITONG ITAAS*/
+/* HEADER SECTION */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0); 
+    padding: 20px 0;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    backdrop-filter: blur(10px);
+    z-index: 1000; 
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
+}
+
+nav ul li a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* HOVER EFFECT - CHANGE COLOR */
+nav ul li a:hover {
+    color: #eb700c;
+}
+
+/* BODY SECTION */
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding-top: 80px; 
+    overflow-x: hidden; 
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 95%;
+    margin: auto;
+    position: relative; 
+}
+
+/* TEXT CONTAINER */
+.text-container {
+    position: absolute; 
+    z-index: 2; 
+    color: white; 
+    font-size: 2rem; 
+    font-weight: bold;
+    text-align: left;
+    width: 50%; 
+    left: 200px;
+}
+
+/* IMAGE */
+.myPicture {
+    width: 800px;
+    height: 800px;
+    background-image: url('ken.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 10px;
+    position: relative; 
+    z-index: 1; 
+    transform: translate(400px, 100px); 
+}
+/* EFFECT PO ITO NG TYPE */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    30% {
+        width: 45%;
+    }
+}
+
+.type {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white;
+    width: 0;
+    animation: typing 2s steps(9, end) infinite, blink 0.7s infinite;
+}
+
+
+
+
+/* ABOUT SECTION */
+#about {
+    width: 100%;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #121212;
+    color: white;
+}
+
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.hobbies {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.overlay-text {
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 95%;
+}
+
+
+
+#skills {
+    width: 100%;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 50px;
+    background-color: #121212;
+    color: #0ceb4a;
+}
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.skills {
+    width: 60%;
+    border-radius: 10px;
+}
+
+
+#experience {
+    width: 100%;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 50px; 
+    background-color: #121212;
+    color: #ebeb0c; 
+}
+.ref-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.experience {
+    width: 20%;
+    border-radius: 10px;
+}
+
+
+#education {
+    width: 100%;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 50px; 
+    background-color: #121212;
+    color: #4029d4; 
+}
+
+.educ {
+    margin: auto;
+}
+
+.educ h2 {
+    color: white;
+    font-size: 3rem;
+}
+
+.educ h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.educ p {
+    margin: 5px 0;
+}
+
+.educ ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.educ li {
+    color: white;
+}
+
+#contact {
+    width: 100%;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 50px; 
+    background-color: #121212;
+    color: white; 
+}
+
+
+.contact-info {
+    margin-left: 20px;
+}
+.contact-item {
+    margin-bottom: 10px;
+}
+.contact-item strong {
+    display: inline-block;
+    width: 80px;
+    color: #555;
+}
+.contact-item a {
+    color: #0066cc;
+    text-decoration: none;
+}
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* HOVER EFFECT (IBA-IBA KULAY) */
+nav ul li a[href="#profile"]:hover {
+    color: #eb0c0c;
+}
+nav ul li a[href="#about"]:hover {
+    color: #eb700c;
+}
+nav ul li a[href="#skills"]:hover {
+    color: #0ceb4a; 
+}
+nav ul li a[href="#experience"]:hover {
+    color: #ebeb0c; 
+}
+nav ul li a[href="#education"]:hover {
+    color: #0c70eb; 
+}
+nav ul li a[href="#contact"]:hover {
+    color: #9a0ceb; 
+}
+
+/* ACTIVE LINK */
+body:has(#profile:target) nav ul li a[href="#profile"] {
+    color: #eb0c0c; 
+}
+body:has(#about:target) nav ul li a[href="#about"] {
+    color: #eb700c; 
+}
+body:has(#skills:target) nav ul li a[href="#skills"] {
+    color: #0ceb4a; 
+}
+body:has(#experience:target) nav ul li a[href="#experience"] {
+    color: #ebeb0c; 
+}
+body:has(#education:target) nav ul li a[href="#education"] {
+    color: #0c70eb; 
+}
+body:has(#contact:target) nav ul li a[href="#contact"] {
+    color: #9a0ceb; 
+}
